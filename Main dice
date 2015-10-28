@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class MainDice {
+
+	public static void main(String[] args) {
+		Dice dice = new Dice();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Which dice do you wish to roll(20,12,100,10,8,6,4)?");
+		try {
+			int diceChoice = sc.nextInt();
+
+			while (true) {
+				if (diceChoice == 20) {
+					dice.dice20();
+					return;
+
+				} else if (diceChoice == 12) {
+					dice.dice12();
+					return;
+
+				} else if (diceChoice == 100) {
+					dice.dice100();
+					return;
+
+				} else if (diceChoice == 10) {
+					dice.dice10();
+					return;
+
+				} else if (diceChoice == 8) {
+					dice.dice8();
+					return;
+
+				} else if (diceChoice == 6) {
+					dice.dice6();
+					return;
+
+				} else if (diceChoice == 4) {
+					dice.dice4();
+					return;
+
+				} else {
+					System.out.println("Invalid input. Try again.");
+					diceChoice = sc.nextInt();
+				}
+			}
+		} catch (Exception e) {
+			System.out.println("Not an integer.Game over.");
+		}
+	}
+}
