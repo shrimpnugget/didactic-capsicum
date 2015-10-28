@@ -1,0 +1,26 @@
+import java.util.Random;
+
+public class Dice {
+	Random rnd = new Random();
+	public void dice20() {
+		System.out.println("Your D20 roll was: " +rnd.nextInt(20));
+	}
+	public void dice12() {
+		System.out.println("Your D12 roll was: " +rnd.nextInt(12));
+	}
+	public void dice10() {
+		System.out.println("Your D10 roll was: " +rnd.nextInt(10));
+	}
+	public void dice100() {
+		System.out.println("Your D100 roll was: " +rnd.nextInt(100));
+	}
+	public void dice8() {
+		System.out.println("Your D8 roll was: " +rnd.nextInt(8));
+	}
+	public void dice6() {
+		System.out.println("Your D6 roll was: " +rnd.nextInt(6));
+	}
+	public void dice4() {
+		System.out.println("Your D4 roll was: " +rnd.nextInt(4));
+	}
+}
